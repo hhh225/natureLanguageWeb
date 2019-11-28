@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>个人中心修改手机号</title>
+<style>
+body{
+	background:url(images/4030/40301140/v2_pzenxj.jpg);
+	width:100%;
+}
+.div1 {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	font-size: 35px;
+	margin-top: 30px;
+	margin-left: 30px;
+	color:white;
+}
+#div1label{
+	font-size:14px;
+	color:white;
+	position: absolute;
+	right: 10px;
+	margin-top:10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#logo{
+	margin-top:5px;
+	position:absolute;
+	right:120px;
+}
+.p1{
+	text-align:center;
+	height:70px;
+}
+.p2{
+	text-align:center;
+	width:100%;
+}
+.div2{
+	width:100%;
+	background-color:rgba(255,255,255,0.3);
+}
+#div2t1{
+	width:100%;
+	text-align:center;
+	font-weight:600;
+	border:hidden;
+}
+#div2l1{
+	
+	
+}
+</style>
+</head>
+
+<body>
+<div class="div1">
+	<strong>RDF | 个人中心</strong>	
+    <img  id="logo"/>
+	<label id="div1label"><strong>| 搜索引擎首页</strong></label>
+</div>
+
+<p class="p1"></p>
+
+<table id="div2t1" style="background-color:rgba(255,255,255,0.3); border-bottom-left-radius:10px; border-bottom-right-radius:10px; border-top-left-radius:10px; border-top-right-radius:10px">
+<tr>
+<td><label id="div2l1" style=" font-family:幼圆; cursor:pointer" onclick="userJump()">首页</label></td>
+<td><label id="div2l2" style=" font-family:幼圆;cursor:pointer" onclick="hisJump()">历史记录</label></td>
+<td><label id="div2l3" style=" font-family:幼圆;cursor:pointer; " onclick="cpJump()">修改密码</label></td>
+<td><label id="div2l4" style=" font-family:幼圆;cursor:pointer;font-size:24px; color:rgba(255,255,255,1)">修改手机号</label></td>
+</tr>
+</table>
+
+<p style="height:25px"></p>
+<form style="width:100%">
+<table style=" font-family:幼圆;width:100%; margin-left:180px">
+	<tr>
+    	<th width="20%" style="color:#FFF;text-align:center; font-size:24px; background-color:rgba(255,255,255,0.6)">旧手机号</th>
+        <td width="34%" ><input type="password"   style=" color:#FFF;background-color:rgba(255,255,255,0.3); height:30px; width:100%" /></td>
+        <td width="46%"><input style="height:35px; color:rgba(102,102,102,1); background-color:rgba(255,255,255,0.6); border-bottom-left-radius:5px; border-bottom-right-radius:5px; border-top-left-radius:5px; border-top-right-radius:5px" type="button" value="点击发送" /></td>
+    </tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+    	<th style="color:#FFF;text-align:center; font-size:24px; background-color:rgba(255,255,255,0.6)">验证码</th>
+        <td style="width:34%"><input type="password"  style="background-color:rgba(255,255,255,0.3); height:30px; color:#FFF; width:100%"; /></td>
+    </tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr><td>&nbsp;</td></tr>
+    <tr>
+    	<th style="color:#FFF;text-align:center; font-size:24px; background-color:rgba(255,255,255,0.6)">新手机号</th>
+        <td><input type="password"   style="background-color:rgba(255,255,255,0.3); height:30px; color:#FFF; width:100%";  /></td>
+    </tr>
+</table>
+<p style="text-align:center; width:100%"><input type="button" value="提交" style=" width:150px; color:#999; height:50px" /></p>
+</form>
+<script type="text/javascript">
+function phoneJump(){
+	window.location.href="personal(changephone).html";
+}
+function hisJump(){
+	window.location.href="personal(userhistory).jsp";
+}
+function cpJump(){
+	window.location.href="personal(changepass).html";
+}
+function userJump(){
+	window.location.href="personal(user).jsp";
+}
+</script>
+</body>
+</html>
