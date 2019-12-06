@@ -5,8 +5,9 @@
 <%@ page import="java.util.*" %>
 <%@ page import="java.sql.*" %>
 <%@ page import="DBbean.Database" %>
+
 <%
-	String id=(String)session.getAttribute("id");
+	String id=(String)session.getAttribute("uid");
 	Statement stm=Database.getStm();
 	String sql="select LSJL_LJ,LSJL_SJ from LSJL where LSJL_XH in"
 			+"(select LSJL_XH from LSJL_YHXXB where YHXXB_ID="+id+");"
